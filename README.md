@@ -68,7 +68,3 @@ Challenges and Notes
 - **Working with Retrofit**: Integrating Retrofit for API calls was a learning curve. Configuring it to handle network responses and managing errors gracefully added to the challenge.
 
 * * * * *
-Screenshots
------------
-
-* * * * *
