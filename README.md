@@ -56,6 +56,16 @@ Technologies Used
 
 * * * * *
 
+Challenges and Notes
+--------------------
+
+- **Free API Restriction**: The free tier of the currency API doesn’t allow direct conversions between arbitrary currency pairs. To work around this, I had to first convert from the source currency to EUR, then from EUR to the target currency.
+
+- **Learning MVVM and Hilt**: This project was my first time using the MVVM (Model-View-ViewModel) architecture and dependency injection with Hilt. Getting familiar with this design pattern and Hilt's injection setup took some time but improved the app’s structure and testability.
+
+- **Working with Retrofit**: Integrating Retrofit for API calls was a learning curve. Configuring it to handle network responses and managing errors gracefully added to the challenge.
+
+* * * * *
 Screenshots
 -----------
 
