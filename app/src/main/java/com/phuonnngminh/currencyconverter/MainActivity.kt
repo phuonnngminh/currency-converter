@@ -9,6 +9,7 @@ import androidx.lifecycle.lifecycleScope
 import com.phuonnngminh.currencyconverter.databinding.ActivityMainBinding
 import com.phuonnngminh.currencyconverter.main.MainViewModel
 import dagger.hilt.android.AndroidEntryPoint
+import kotlinx.coroutines.flow.collect
 
 @AndroidEntryPoint
 class MainActivity : AppCompatActivity() {
@@ -31,7 +32,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         lifecycleScope.launchWhenStarted {
-            viewModel.conversion.collect { event ->
+            viewModel.conversion.collect { event: MainViewModel.CurrencyEvent ->
                 when(event) {
                     is MainViewModel.CurrencyEvent.Success -> {
                         binding.progressBar.isVisible = false
