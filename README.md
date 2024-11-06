@@ -4,7 +4,7 @@ Currency Converter App
 Overview
 --------
 
-[![Demo video](demo.png)](demo.mp4)
+[![Demo video](demo.gif)](demo.mp4)
 
 The **Currency Converter App** allows users to convert an amount from one currency to another. It supports real-time currency rate updates and provides a simple, easy-to-use interface to perform currency conversions.
 
